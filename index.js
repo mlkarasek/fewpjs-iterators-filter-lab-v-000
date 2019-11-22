@@ -7,7 +7,7 @@ function findMatching(list, name){
 }
 
 function fuzzyMatch(list, partialName) {
-  let nameLength = partialName.length; 
+  let nameLength = partialName.length;
   return list.filter(function (driverName) {
     return driverName.slice(0, nameLength) === partialName;
   });
